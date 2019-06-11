@@ -1,0 +1,16 @@
+name: PlayerShopsPlus
+description: Allow for players to create indepth shops.
+version: ${project.version}
+api-version: '1.13'
+main: com.dragovorn.psp.PlayerShopsPlus
+depends: [Vault]
+permissions:
+  psp.create:
+    description: Allows players to create a playershop
+    default: notop
+  psp.bypass:
+    description: Allows a player to access a locked playershop chest
+    default: op
+  psp.adminshop:
+    description: Allows for a player to create an adminshop
+    default: op
