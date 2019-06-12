@@ -3,6 +3,7 @@ description: Allow for players to create indepth shops.
 version: ${project.version}
 api-version: '1.13'
 main: com.dragovorn.psp.PlayerShopsPlus
+authors: [Dragovorn]
 depends: [Vault]
 permissions:
   psp.create:
