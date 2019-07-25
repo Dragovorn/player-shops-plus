@@ -1,0 +1,45 @@
+name: PlayerCommercePlus
+description: Allow for indepth player commerce.
+version: ${project.version}
+api-version: '1.14'
+main: com.dragovorn.pcp.PlayerCommercePlus
+authors: [Dragovorn]
+depends:
+  - Vault
+softdepend:
+  - BountyHunters
+commands:
+  trade:
+    permission: pcp.trade.use
+    description: Send a trade request to the given player
+  tradeaccept:
+    permission: pcp.trade.use
+    description: Accepts a trade request from the given player
+  tradedecline:
+    permission: pcp.trade.use
+    description: Declines a trade request from the given player
+  shop:
+    permission: pcp.shop.manage
+    description: The shop parent command, for shop management.
+permissions:
+  pcp.trade.use:
+    description: Allows for the use of the trade system
+    default: true
+  pcp.trade.steal:
+    description: Allows for a player to steal from a player trade.
+    default: true
+  pcp.shop.manage:
+    description: Allows for use of the shop management commands
+    default: true
+  pcp.shop.create:
+    description: Allows players to create a player shop.
+    default: true
+  pcp.shop.bypass:
+    description: Allows you to bypass a player shop's protection.
+    default: op
+  pcp.shop.create.admin:
+    description: Allows for a player to create an admin shop.
+    default: op
+  pcp.shop.manage.other:
+    description: Allows for the use of the shop management system on other player's shops
+    default: op

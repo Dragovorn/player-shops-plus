@@ -1,0 +1,15 @@
+trade:
+  # If the trade command should be enabled.
+  enabled: true
+  # If stealing should be allowed.
+  steal: true
+  # The maximum radius a trade can be conducted at, -1 for unlimited.
+  radius: 10
+shop:
+  # If shops are enabled.
+  enabled: true
+integration:
+  # Configuration for the bountyhunters integration.
+  bountyhunters:
+    # If the integration is enabled.
+    enabled: true
